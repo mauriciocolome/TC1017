@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[])
 {
-    char* songs[10];
+    char* songs[11];
     songs[0]=malloc(100);
     songs[0] = "staying alive.mp3";
     songs[1]=malloc(100);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     songs[10]=malloc(100);
     songs[10] = "starlight.mp3";
 
-    char* names[10];
+    char* names[11];
     names[0]=malloc(100);
     names[0] = "Bee Gees - Staying Alive";
     names[1]=malloc(100);
@@ -96,14 +96,27 @@ int a;
     printf("⤐ Would you like to play? (y/n)\n");
     a = getchar();
     if(a == 'y'){
+        
+        for (int i=0; i<5; i++){
 
       printf("Guess the song: \n");
-
-  for(int i = 0; i < 11; i++){
-    int ran;
+        int ran;
 
     srand(time(0));
     ran=rand()%10+1;
+        
+        printf("\n a) ");
+        putchar( names[ran] );
+            printf("\n b) ");
+        putchar( names[ran] );
+            printf("\n c) ");
+        putchar( names[ran] );
+            printf("\n d) ");
+        putchar( songs );
+            
+
+  for(int i = 0; i < 11; i++){
+    
 
     /* initializations */
     ao_initialize();
@@ -138,6 +151,7 @@ int a;
       mpg123_exit();
       ao_shutdown();
     }
+        }
   }else{
     printf("\n");
     printf("Goodbye. \n");
