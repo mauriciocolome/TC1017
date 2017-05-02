@@ -28,6 +28,20 @@ int main(int argc, char *argv[])
     songs[9] = "roxanne.mp3";
     songs[10]=malloc(100);
     songs[10] = "starlight.mp3";
+    songs[11]=malloc(100);
+    songs[11] = "bohemian rhapsody.mp3";
+    songs[12]=malloc(100);
+    songs[12] = "by the way.mp3";
+    songs[13]=malloc(100);
+    songs[13] = "crystalized.mp3";
+    songs[14]=malloc(100);
+    songs[14] = "in da club.mp3";
+    songs[15]=malloc(100);
+    songs[15] = "otherside.mp3";
+    songs[16]=malloc(100);
+    songs[16] = "the zoo.mp3";
+    songs[17]=malloc(100);
+    songs[17] = "wish u were here.mp3";
 
     char* names[10];
     names[0]=malloc(100);
@@ -52,6 +66,20 @@ int main(int argc, char *argv[])
     names[9] = "The Police - Roxanne";
     names[10]=malloc(100);
     names[10] = "Muse - Starlight";
+    names[11]=malloc(100);
+    names[11] = "Queen - Bohemian Rhapsody";
+    names[12]=malloc(100);
+    names[12] = "Red Hot Chilli Peppers - By the Way";
+    names[13]=malloc(100);
+    names[13] = "The xx - Crystalized";
+    names[14]=malloc(100);
+    names[14] = "50 cent - In Da Club";
+    names[15]=malloc(100);
+    names[15] = "Red Hot Chilli Peppers - Otherside";
+    names[16]=malloc(100);
+    names[16] = "Scorpions - The Zoo";
+    names[17]=malloc(100);
+    names[17] = "Pink Floyd - Wish U Were Here";
 
 
     mpg123_handle *mh;
